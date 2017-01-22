@@ -1,5 +1,5 @@
 # WeekiWacheeKayaking.com
 
-Images - All images used on site (JPEG, PNG)\n
-Styles - CSS styles\n
-Scripts - JavaScripts\n
+Images - All images used on site (JPEG, PNG) <br />
+Styles - CSS styles <br />
+Scripts - JavaScripts <br />
