@@ -23,6 +23,11 @@ HTML Reference
 http://www.w3schools.com/tags/
 https://www.cheatography.com/davechild/cheat-sheets/html4/
 
+Git
+https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+https://git-scm.com/docs/git-cherry-pick
+
 
 ______________________________________________________________________________________
 List of sites for inspiration:
