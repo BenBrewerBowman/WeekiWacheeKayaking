@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Chewy|Coming+Soon|News+Cycle|Sue+Ellen+Francisco');
 
+
 #header{
 	position: fixed;
 	top: 0;
@@ -48,7 +49,6 @@
 }
 #header li:nth-child(3) a{
 	top: 10px;
-
 }
 
 
@@ -68,12 +68,16 @@
 	left: 0;
 	width: 100%;
 	overflow: auto;
-	padding-bottom: 50px;
+	padding-bottom: 17px;
 	background-color: #F0FF59;
 	font-family: 'Coming Soon';
 }
 #footer h3{
 	font-size: 18px;
+}
+
+#footer h3 #Legalcentered{
+	margin-left: 150px;
 }
 .footer-section{
 	float: left;
@@ -130,12 +134,12 @@
 #developers{
 	position: relative;
 	display: block;
-	bottom: -30px;
-	width: 160px;
+	top: 15px;
+	width: 180px;
 	height: 30px;
 	margin: auto;
 	font-family: 'News Cycle';
-	font-size: 14px;
+	font-size: 15px;
 }
 #developers *{
 	float: left;
