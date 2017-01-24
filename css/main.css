@@ -40,7 +40,7 @@
 }
 #header li:nth-child(3){
 	width: 240px;
-	line-height: 0;
+	line-height: 0; /*need to remove if text is used in the center logo*/
 }
 #header li a:hover{
 	color: yellow;
@@ -71,20 +71,27 @@
 #footer h3{
 	font-size: 18px;
 }
-#footer h3 #Legalcentered{
-	margin-left: 150px;
-}
 .footer-section{
 	float: left;
 	padding-left: 10px;
+}
+.custom_action_link a{
+	text-decoration: none;
+	color: black;
+}
+.custom_action_link a:hover > p{
+	text-decoration: underline;
 }
 #contact{
 	width: 300px;
 	font-size: 12px;
 }
-#copyright{
+#legal{
 	width: 400px;
 	font-size: 10px;
+}
+#legal h3{
+	margin-left: 150px; /*center text*/
 }
 #social_media{
 	width: 270px;
@@ -92,8 +99,6 @@
 }
 #social_media a{
 	display: block;
-	text-decoration: none;
-	color: black;
 }
 #social_media a > *{
 	display: inline-block;
@@ -118,9 +123,6 @@
 	width: 42px;
 	height: 42px;
 }
-#social_media a:hover > p{
-	text-decoration: underline;
-}
 #social_media a:hover .icon_mask{
 	background-color: white;
 }
@@ -129,12 +131,12 @@
 #developers{
 	position: relative;
 	display: block;
-	top: 15px;
-	width: 180px;
+	top: 10px;
+	width: 129px;
 	height: 30px;
 	margin: auto;
 	font-family: 'News Cycle';
-	font-size: 15px;
+	font-size: 12px;
 }
 #developers *{
 	float: left;
