@@ -19,6 +19,10 @@ http://www.colorpicker.com/
 Fonts
 https://fonts.google.com/
 
+
+______________________________________________________________________________________
+References:
+
 HTML Reference
 http://www.w3schools.com/tags/
 https://www.cheatography.com/davechild/cheat-sheets/html4/
@@ -32,6 +36,9 @@ https://git-scm.com/docs/git-cherry-pick
 Frontend Handbook
 https://www.frontendhandbook.com/
 
+Responsive Layout Basics
+https://developers.google.com/web/fundamentals/design-and-ui/responsive/
+
 
 ______________________________________________________________________________________
 List of sites for inspiration:
@@ -41,6 +48,8 @@ http://www.nomadicmatt.com/
 
 
 ______________________________________________________________________________________
+########################### NOTES ABOUT ASPECTS OF WEBSITE ###########################
+
 Header and Footer
 - the problem of having to change the header and footer code of each page was brought up
 - after some research, four solution options were found
@@ -52,4 +61,21 @@ Header and Footer
 
 
 Information Architecture
-- 
+- needs to be established...
+
+
+Responsive Layout
+- Simply one breakpoint at viewport width of 1015px
+- for viewport widths > 1015px
+	- Header will include the links to other pages with the center logo being a link to the homepage.
+	  The group of links is set at width of 1000px, and will stay centered as viewport width increases (using 'margin: auto') 
+	- Footer will be made of three sections (contact, social media, and legal information) of different widths that add up to 1000px.
+	  The sections group is fixed at width 1000px, and will stay centered as viewport width increases (using 'margin: auto')
+- for viewport widths <= 1015px
+	- Header will include the logo in the center (using 'margin: auto') which is also link to homepage.
+	  Header then includes a menu button that's on the left, the menu has the four other links that the larger header has.
+	- Footer will still maintain the three sections but they will be 'display: block' on separate lines and content in the sections will be centered
+	  Additionally, the font-size is decreased in the Legal section
+
+
+######################################################################################
