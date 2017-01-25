@@ -2,11 +2,31 @@
 <html>
 	<head>
 	  <title>Weeki Wachee Kayaking</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" type="text/css" href="css/main.css"/>
 	</head>
 	<body>
 		<div id="header">
-			<ul class="center">
+			<div class="mobile_only">
+				<div id="mobile_logo">
+					<a id="logo" href="index.html">
+						<img src="Images/big-yellow-canoe.png"/>
+					</a>
+				</div>
+				<div id="mobile_menu_wrapper">
+					<button onclick="toggleMenuDrop()">
+						<img src="Images/mobile-yellow-menu.png"/>
+					</button>
+					<ul id="mobile_menu" class="hidden">
+						<li><a href="services.html">RATES/TOURS</a></li>
+						<li><a href="river.html">WEEKI WACHEE RIVER</a></li>
+						<li><a href="rules.html">RIVER RULES</a></li>
+						<li><a href="services.html">ABOUT US</a></li>
+					</ul>
+				</div>		
+			</div>
+				
+			<ul id="menu" class="center_block">
 				<li><a href="services.html">RATES/TOURS</a></li>
 				<li><a href="river.html">WEEKI WACHEE RIVER</a></li>
 				<li>
@@ -20,11 +40,11 @@
 				<li><a href="services.html">ABOUT US</a></li>
 			</ul>
 		</div>
-		<div class="center" id="content">
+		<div class="center_block" id="content">
 			<!-- content of the specific page goes here  -->
 		</div>
 		<div id="footer">
-			<div class="center">
+			<div class="center_block">
 				<div id="contact" class="footer-section custom_action_link">
 					<h3>WEEKI WACHEE KAYAKING</h3>
 					<a href="https://www.google.com/maps/place/8103+Cortez+Blvd,+Weeki+Wachee,+FL+34607/@28.529652,-82.5920807,17z/data=!3m1!4b1!4m5!3m4!1s0x88e821ba095dd169:0xd182fbd55ad7aec9!8m2!3d28.529652!4d-82.589892" target="_blank">
@@ -42,7 +62,7 @@
 					<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 					<div>Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 					<div>Icons made by <a href="http://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-					<p>copyright all rights reserved ...</p>
+					<div>(Menu button icon) Icons made by <a href="http://www.flaticon.com/authors/chris-veigt" title="Chris Veigt">Chris Veigt</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 					<p>copyright all rights reserved ...</p>
 				</div>
 				<div id="social_media" class="footer-section custom_action_link">
@@ -70,7 +90,7 @@
 
 
 
-
+		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
