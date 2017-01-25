@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|News+Cycle');
 
-
+body{
+	margin: 0; /*allows footer (position relative) to have true 100% width*/
+}
 .mobile_only{
 	display: none;
 }
@@ -23,7 +25,7 @@
 	top: 0;
 	height: 100px;
 	width: 190px;
-	line-height: 100px; /*how does this work?*/
+	line-height: 100px; /*vertically centers text*/
 }
 #header li a{
 	display: block;
@@ -39,9 +41,6 @@
 	width: 75px;
 	height: 75px;
 	padding-top: 12.5px;
-	/*transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);*/
 }
 #header li:nth-child(3){
 	width: 240px;
@@ -61,12 +60,12 @@
 	padding-top: 90px;
 	background-color: #FFFFE6; /*super light yellow*/
 	/*box shadow?*/
-	height: 100px;
+	height: 1000px;
 }
 
 
 #footer{
-	position: absolute;
+	/*position: absolute;*/
 	left: 0;
 	width: 100%;
 	overflow: auto;
@@ -98,7 +97,7 @@
 	font-size: 10px;
 }
 #legal h3{
-	margin-left: 150px; /*center text*/
+	text-align: center; /*center text*/
 }
 #social_media{
 	width: 270px;
@@ -138,12 +137,12 @@
 #developers{
 	position: relative;
 	display: block;
-	top: 10px;
 	width: 129px;
 	height: 30px;
 	margin: auto;
 	font-family: 'News Cycle';
 	font-size: 12px;
+	line-height: 30px
 }
 #developers *{
 	float: left;
@@ -152,7 +151,7 @@
 	margin: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1015px) {
 	.hidden{
 		display: none !important;
 	}
@@ -200,9 +199,9 @@
 	#mobile_menu_wrapper ul li a{
 		float: left;
 		height: 40px;
+		width: inherit;
 		line-height: 40px;
 		font-size: 12px;
-		margin-left: 7.5px;
 	}
 	#mobile_logo{
 		position: absolute;
@@ -227,8 +226,29 @@
 		padding-top: 60px;
 	}
 
+	.center_block{
+		width: 98%;
+	}
+	.footer_section{
+		display: block;
+	}
+	.mobile_footer_section_wrapper{
+		width: 98%;
+		overflow: auto;
+	}
+	#contact, #legal, #social_media{
+		width: 98%;
+		margin: auto;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	#legal{
+		font-size: 7px;
+	}
+	#legal h3{
+		margin-left: 0;
+	}
 
-	
 
 
 }
