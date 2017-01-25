@@ -57,15 +57,13 @@ body{
 }
 #content{
 	overflow: auto;
-	padding-top: 90px;
+	padding-top: 100px;
 	background-color: #FFFFE6; /*super light yellow*/
 	/*box shadow?*/
-	height: 1000px;
 }
 
 
 #footer{
-	/*position: absolute;*/
 	left: 0;
 	width: 100%;
 	overflow: auto;
@@ -135,20 +133,16 @@ body{
 
 /*might need to come back to this one*/
 #developers{
-	position: relative;
 	display: block;
-	width: 129px;
+	width: 100%;
 	height: 30px;
-	margin: auto;
 	font-family: 'News Cycle';
 	font-size: 12px;
-	line-height: 30px
-}
-#developers *{
-	float: left;
+	line-height: 30px;
 }
 #developers p{
 	margin: 0;
+	text-align: center;
 }
 
 @media (max-width: 1015px) {
@@ -223,18 +217,15 @@ body{
 
 
 	#content{
-		padding-top: 60px;
+		padding-top: 70px;
 	}
-
 	.center_block{
 		width: 98%;
 	}
+
+
 	.footer_section{
 		display: block;
-	}
-	.mobile_footer_section_wrapper{
-		width: 98%;
-		overflow: auto;
 	}
 	#contact, #legal, #social_media{
 		width: 98%;
@@ -245,10 +236,4 @@ body{
 	#legal{
 		font-size: 7px;
 	}
-	#legal h3{
-		margin-left: 0;
-	}
-
-
-
 }
