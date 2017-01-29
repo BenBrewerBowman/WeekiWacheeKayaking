@@ -45,6 +45,7 @@ List of sites for inspiration:
 
 http://www.westernriver.com/whitewater-rafting-utah
 http://www.nomadicmatt.com/
+http://davidsonflyfishing.com/
 
 
 ______________________________________________________________________________________
@@ -62,6 +63,15 @@ Header and Footer
 
 Information Architecture
 - needs to be established...
+- Homepage
+	- Homepage is the first thing that viewers will see - make a good impression
+	- Homepage will include an overview of the service while creatively adding the advertising points of the business
+		- service description: kayak rental/tour of the river/kayak races/treasure-scavenger hunt
+		- service includes: rental (all equipment), launch, pick up, private lot to park
+		- advertising points:
+			- manatees
+			- beautiful, clear river
+			- 
 
 
 Responsive Layout

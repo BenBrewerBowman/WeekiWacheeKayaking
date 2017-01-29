@@ -1,0 +1,64 @@
+/* homepage.css */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Pathway+Gothic+One|Sigmar+One');
+
+#headline{
+	height: 500px;
+	overflow: hidden;
+	color: white;
+}
+#headline_background{
+	background: url("../Images/headline_bg.jpg") center;
+	height: inherit;
+	opacity: 1;
+}
+#headline h1{
+	position: absolute;
+	width: inherit;
+	margin: 0;
+	text-align: center;
+
+	font-family: 'Sigmar One';
+	top: 309px;
+	font-size: 50px;
+	/*or*/
+/*	font-family: 'Coming Soon';
+	font-size: 50px;
+	top: 310px; */
+	/*or*/
+}
+#headline p{
+	position: absolute;
+	top: 582px;
+	right: 20px; /*not good, fix later*/
+	width: inherit;
+	margin: 0;
+	text-align: right;
+	font-family: 'News Cycle';
+	font-size: 10px;
+}
+#services{
+
+}
+#services h3, #services h4{
+	text-align: center;
+}
+#services h4{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#service_categories > div{
+	display: inline-block;
+	width: 300px;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#rental h3, #tours h3, #special_events h3{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	margin: auto;
+}
