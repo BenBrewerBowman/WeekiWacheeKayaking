@@ -12,7 +12,7 @@ body{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
+	height: 75px;
 	background-color: black;
 	z-index: 2;
 }
@@ -22,11 +22,12 @@ body{
 }
 #header li{
 	float: left;
-	top: 0;
-	height: 100px;
-	width: 190px;
-	line-height: 100px; /*vertically centers text*/
+	height: 75px;
+	width: 170px;
+	line-height: 75px;
+  text-align: center;
 }
+
 #header li a{
 	display: block;
 	position: relative;
@@ -37,27 +38,34 @@ body{
 	font-size: 17px;
 	font-weight: bolder;
 }
+#header li a span{
+	display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
 #header li a img{
-	width: 75px;
-	height: 75px;
-	padding-top: 12.5px;
+	width: 60px;
+	height: 60px;
+	padding-top: 8px;
+	margin-left: 25px;
 }
-#header li:nth-child(3){
-	width: 240px;
-	line-height: 0; /*need to remove if text is used in the center logo*/
+#header li:nth-child(5){
+	width: 180px;
+	left: 0px;
 }
+
 #header li a:hover{
 	color: yellow;
 }
 
 
 .center_block{
-	width: 1000px;
+	width: 1200px;
 	margin: auto;
 }
 #content{
 	overflow: auto;
-	padding-top: 100px;
+	padding-top: 75px;
 	background-color: #FFFFE6; /*super light yellow*/
 	/*box shadow?*/
 }
@@ -67,13 +75,13 @@ body{
 	left: 0;
 	width: 100%;
 	overflow: auto;
-	padding-bottom: 20px;
 	background-color: #F0FF59;
 	font-family: 'Coming Soon';
 	z-index: 1;
 }
 #footer h3{
 	font-size: 18px;
+	text-decoration: underline;
 }
 .footer-section{
 	float: left;
@@ -87,19 +95,12 @@ body{
 	text-decoration: underline;
 }
 #contact{
-	width: 300px;
-	font-size: 12px;
+	width: 290px;
+	font-size: 14px;
 }
-#legal{
-	width: 400px;
-	font-size: 10px;
-}
-/*#legal h3{
-	text-align: center;
-}*/
 #social_media{
 	width: 270px;
-	font-size: 12px;
+	font-size: 15px;
 }
 #social_media a{
 	display: block;
@@ -112,7 +113,7 @@ body{
 	position: relative;
 	margin: 0;
 	padding-left: 10px;
-	bottom: 15px;
+	bottom: 20px;
 }
 .icon_mask{
 	width: 40px;
@@ -130,6 +131,15 @@ body{
 #social_media a:hover .icon_mask{
 	background-color: white;
 }
+#legal{
+	width: 400px;
+	font-size: 10px;
+	margin-left: 205px;
+}
+/*#legal h3{
+	text-align: center;
+}*/
+
 
 /*might need to come back to this one*/
 #developers{
@@ -137,15 +147,17 @@ body{
 	width: 100%;
 	height: 30px;
 	font-family: 'News Cycle';
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 30px;
+	background-color: #F0FF59;
 }
 #developers p{
 	margin: 0;
 	text-align: center;
+	color: black;
 }
 
-@media (max-width: 1015px) {
+@media (max-width: 1150px) {
 	.hidden{
 		display: none !important;
 	}
@@ -181,7 +193,7 @@ body{
 		margin: 0;
 		background-color: black;
 	}
-	#header li:nth-child(3){
+	#header li:nth-child(5){
 		width: 150px;
 	}
 	#mobile_menu_wrapper ul li{
@@ -199,15 +211,14 @@ body{
 	}
 	#mobile_logo{
 		position: absolute;
-		top: 0;
 		width: 100%;
 		z-index: 3;
 	}
 	#mobile_logo a{
 		display: block;
-		width: 50px;
+		width: 28px;
 		margin: auto;
-		margin-top: 3px;
+		margin-top: 6px;
 		top: 0;
 	}
 	#mobile_logo a img{
@@ -217,7 +228,7 @@ body{
 
 
 	#content{
-		padding-top: 70px;
+		padding-top: 60px;
 	}
 	.center_block{
 		width: 98%;
@@ -230,7 +241,7 @@ body{
 	#contact, #legal, #social_media{
 		width: 98%;
 		margin: auto;
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 		text-align: center;
 	}
 	#legal{
