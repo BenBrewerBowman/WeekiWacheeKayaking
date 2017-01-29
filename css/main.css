@@ -2,10 +2,27 @@
 
 body{
 	margin: 0; /*allows footer (position relative) to have true 100% width*/
+	background-color: #ecf0f1; /*super light yellow*/
+	box-sizing:border-box;
 }
 .mobile_only{
 	display: none;
 }
+
+.center_block{
+	width: 1200px;
+	margin: auto;
+}
+
+#content{
+	overflow: auto;
+	padding-top: 75px;
+	background-color: #ecf0f1; /*grey*/
+	/*box shadow?*/
+}
+
+/*-----------------------------------------------------------------------------*/
+/*NavBar Computer View*/
 
 #header{
 	position: fixed;
@@ -27,7 +44,6 @@ body{
 	line-height: 75px;
   text-align: center;
 }
-
 #header li a{
 	display: block;
 	position: relative;
@@ -53,23 +69,12 @@ body{
 	width: 180px;
 	left: 0px;
 }
-
 #header li a:hover{
 	color: yellow;
 }
 
-
-.center_block{
-	width: 1200px;
-	margin: auto;
-}
-#content{
-	overflow: auto;
-	padding-top: 75px;
-	background-color: #FFFFE6; /*super light yellow*/
-	/*box shadow?*/
-}
-
+/*-----------------------------------------------------------------------------*/
+/* Footer Computer View */
 
 #footer{
 	left: 0;
@@ -140,8 +145,6 @@ body{
 	text-align: center;
 }*/
 
-
-/*might need to come back to this one*/
 #developers{
 	display: block;
 	width: 100%;
@@ -156,6 +159,9 @@ body{
 	text-align: center;
 	color: black;
 }
+
+/*-----------------------------------------------------------------------------*/
+/* Mobile */
 
 @media (max-width: 1150px) {
 	.hidden{
@@ -180,7 +186,7 @@ body{
 		width: 48px;
 		background-color: black;
 		border-radius: 20%;
-		margin: 6px;
+		margin: 6px 0px 0px 15px;
 	}
 	#mobile_menu_wrapper button img{
 		height: 32px;
@@ -213,6 +219,7 @@ body{
 		position: absolute;
 		width: 100%;
 		z-index: 3;
+		color: white;
 	}
 	#mobile_logo a{
 		display: block;
@@ -225,7 +232,6 @@ body{
 		width: 50px;
 		height: 50px;
 	}
-
 
 	#content{
 		padding-top: 60px;
