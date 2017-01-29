@@ -52,14 +52,8 @@ ________________________________________________________________________________
 ########################### NOTES ABOUT ASPECTS OF WEBSITE ###########################
 
 Header and Footer
-- the problem of having to change the header and footer code of each page was brought up
-- after some research, four solution options were found
-	1. create a template.html that has the header and footer included, then copy that file and add the page specific content
-	2. use php: create a header.php and footer.php then use <?php include('header.php')?> and <?php include('footer.php')?> in each page
-	3. use javascript/jquery: create header.html and footer.html and load them in the <body> (ex: $("#header").load("header.html);)
-	4. conserve the header and footer in the index.html and load the subpage in a <div> or <iframe> in the between the header and footer
-- seems that option 2 seems to the most common suggestion, but to keep things simple development will continue at this time with option 1
-
+- Each time header/footer changed, copy over into other docs. Iframe, php, jquery, HTML5 include not an option.
+  Whoever modifies the header/footer must change it for all docs.
 
 Information Architecture
 - needs to be established...
@@ -72,8 +66,7 @@ Information Architecture
 			- manatees
 			- beautiful, clear river
 			- 
-
-
+			
 Responsive Layout
 - Simply one breakpoint at viewport width of 1015px
 - for viewport widths > 1015px
@@ -88,4 +81,11 @@ Responsive Layout
 	  Additionally, the font-size is decreased in the Legal section
 
 
-######################################################################################
+______________________________________________________________________________________
+########################### WORK REQUESTS ###########################
+
+Ben:
+
+Joseph:
+- Add Weeki Wachee header in mobile menu black header. (Not in button tabs, on main page header) 
+	example:   NavButton, "WEEKI WACHEE", Kayak Logo, "KAYAKING"
