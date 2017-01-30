@@ -2,8 +2,8 @@
 
 body{
 	margin: 0; /*allows footer (position relative) to have true 100% width*/
-	background-color: #ecf0f1; /*super light yellow*/
-	box-sizing:border-box;
+	background-color: #ecf0f1; /*super light grey*/
+	box-sizing: border-box;
 }
 .mobile_only{
 	display: none;
@@ -42,7 +42,7 @@ body{
 	height: 75px;
 	width: 170px;
 	line-height: 75px;
-  text-align: center;
+  	text-align: center;
 }
 #header li a{
 	display: block;
@@ -56,8 +56,8 @@ body{
 }
 #header li a span{
 	display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+  	vertical-align: middle;
+  	line-height: normal;
 }
 #header li a img{
 	width: 60px;
@@ -80,7 +80,7 @@ body{
 	left: 0;
 	width: 100%;
 	overflow: auto;
-	background-color: #F0FF59;
+	background-color: #F0FF59; /*lighter yellow*/
 	font-family: 'Coming Soon';
 	z-index: 1;
 }
@@ -163,7 +163,8 @@ body{
 /*-----------------------------------------------------------------------------*/
 /* Mobile */
 
-@media (max-width: 1205px) {
+@media (max-width: 1215px) {
+	/*changes to existing styles*/
 	.hidden{
 		display: none !important;
 	}
@@ -175,6 +176,44 @@ body{
 	}
 	#header{
 		height: 60px;
+	}
+	#header li:nth-child(5){
+		width: 150px;
+	}
+	#content{
+		padding-top: 60px;
+	}
+	.center_block{
+		width: 98%;
+	}
+	.footer_section{
+		display: block;
+	}
+	#contact, #legal, #social_media{
+		width: 98%;
+		margin: auto;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+
+	/*exclusively mobile styles*/
+	#mobile_logo{
+		position: absolute;
+		width: 100%;
+		z-index: 3;
+		color: white;
+	}
+	#mobile_logo a{
+		display: block;
+		width: 28px;
+		margin: auto;
+		margin-top: 6px;
+		top: 0;
+	}
+	#mobile_logo a img{
+		width: 50px;
+		height: 50px;
 	}
 	#mobile_menu_wrapper{
 		position: absolute;
@@ -199,9 +238,6 @@ body{
 		margin: 0;
 		background-color: black;
 	}
-	#header li:nth-child(5){
-		width: 150px;
-	}
 	#mobile_menu_wrapper ul li{
 		display: block;
 		border-top: 3px grey solid;
@@ -215,41 +251,12 @@ body{
 		line-height: 40px;
 		font-size: 12px;
 	}
-	#mobile_logo{
-		position: absolute;
-		width: 100%;
-		z-index: 3;
-		color: white;
+	#mobile_menu{ /*pushes mobile dropdown menu so that it looks more inline with the header*/
+		position: relative;
+		top: 6px;
 	}
-	#mobile_logo a{
-		display: block;
-		width: 28px;
-		margin: auto;
-		margin-top: 6px;
-		top: 0;
-	}
-	#mobile_logo a img{
-		width: 50px;
-		height: 50px;
-	}
-
-	#content{
-		padding-top: 60px;
-	}
-	.center_block{
-		width: 98%;
-	}
-
-
-	.footer_section{
-		display: block;
-	}
-	#contact, #legal, #social_media{
-		width: 98%;
-		margin: auto;
-		margin-bottom: 10px;
-		text-align: center;
-	}
+}
+@media (max-width: 430px) {
 	#legal{
 		font-size: 7px;
 	}
