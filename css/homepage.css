@@ -1,9 +1,9 @@
 /* homepage.css */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Pathway+Gothic+One|Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Abel|Sigmar+One');
 
 #headline{
-	height: 500px;
+	height: 600px;
 	overflow: hidden;
 	color: white;
 }
@@ -19,7 +19,7 @@
 	text-align: center;
 
 	font-family: 'Sigmar One';
-	top: 309px;
+	top: 334px;
 	font-size: 50px;
 	/*or*/
 /*	font-family: 'Coming Soon';
@@ -29,8 +29,7 @@
 }
 #headline p{
 	position: absolute;
-	top: 582px;
-	right: 20px; /*not good, fix later*/
+	top: 658px;
 	width: inherit;
 	margin: 0;
 	text-align: right;
@@ -38,9 +37,9 @@
 	font-size: 10px;
 }
 #services{
-
+	font-family: 'Abel';
 }
-#services h3, #services h4{
+#services h3, #services h4, #services p{
 	text-align: center;
 }
 #services h4{
@@ -48,17 +47,27 @@
 	margin-right: 20px;
 }
 #service_categories > div{
-	display: inline-block;
-	width: 300px;
+	float: left;
+	width: 380px;
 	margin: 0;
 	padding-left: 10px;
 	padding-right: 10px;
 }
-#rental h3, #tours h3, #special_events h3{
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	background-color: black;
-	color: white;
+.center_img{
+	display: block;
 	margin: auto;
+}
+.learn_more_link{
+	text-decoration: none;
+}
+.learn_more_link p{
+	border: 2px solid black;
+	border-radius: 5px;
+	color: white;
+	font-size: 14px;
+	background-color: black;
+}
+.learn_more_link:hover > p{
+	background-color: white;
+	color: black;
 }
