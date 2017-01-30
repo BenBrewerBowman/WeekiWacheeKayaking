@@ -66,11 +66,10 @@ Information Architecture
 		- advertising points:
 			- manatees
 			- beautiful, clear river
-			- 
 			
 Responsive Layout
-- Simply one breakpoint at viewport width of 1015px
-- for viewport widths > 1015px
+- Simply one breakpoint at viewport width of 1205px
+- for viewport widths > 1205px
 	- Header will include the links to other pages with the center logo being a link to the homepage.
 	  The group of links is set at width of 1000px, and will stay centered as viewport width increases (using 'margin: auto') 
 	- Footer will be made of three sections (contact, social media, and legal information) of different widths that add up to 1000px.
