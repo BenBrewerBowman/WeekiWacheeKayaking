@@ -58,6 +58,9 @@
 	margin: auto;
 }
 .learn_more_link{
+	display: block;
+	width: 100px;
+	margin: auto;
 	text-decoration: none;
 }
 .learn_more_link p{
@@ -67,7 +70,7 @@
 	font-size: 14px;
 	background-color: black;
 }
-.learn_more_link:hover > p{
+.learn_more_link:hover p{
 	background-color: white;
 	color: black;
 }
@@ -75,7 +78,8 @@
 @media (max-width: 1200px) { /*makes services content reponsive - only quick fix need to come back to this*/
 	#service_categories > div{
 		display: block;
-		width: 100%;
+		width: 90%;
+		margin-left: 5%;
 	}
 }
 @media (max-width: 834px) { /*vertically centers two line headline text*/
