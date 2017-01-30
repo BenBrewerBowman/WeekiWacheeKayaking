@@ -71,3 +71,20 @@
 	background-color: white;
 	color: black;
 }
+
+@media (max-width: 1200px) { /*makes services content reponsive - only quick fix need to come back to this*/
+	#service_categories > div{
+		display: block;
+		width: 100%;
+	}
+}
+@media (max-width: 834px) { /*vertically centers two line headline text*/
+	#headline h1{
+		top: 278px;
+	}
+}
+@media (max-width: 486px) { /*verically centers three line headline text*/
+	#headline h1{
+		top: 237px;
+	}
+}
