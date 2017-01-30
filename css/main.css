@@ -100,11 +100,11 @@ body{
 	text-decoration: underline;
 }
 #contact{
-	width: 290px;
+	width: 385px;
 	font-size: 14px;
 }
 #social_media{
-	width: 270px;
+	width: 385px;
 	font-size: 15px;
 }
 #social_media a{
@@ -138,8 +138,8 @@ body{
 }
 #legal{
 	width: 400px;
-	font-size: 10px;
-	margin-left: 205px;
+	font-size: 10px;/*
+	margin-left: 205px;*/
 }
 /*#legal h3{
 	text-align: center;
