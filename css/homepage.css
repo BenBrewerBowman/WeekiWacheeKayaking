@@ -52,7 +52,7 @@
 	float: left;
 	width: 380px;
 	margin: 0;
-	padding: 0 10px 20px 10px;
+	padding: 0 10px 50px 10px;
 }
 .center_img{
 	display: block;
@@ -76,12 +76,24 @@
 	color: black;
 }
 
+#hours_operation{
+	font-family: 'Abel';
+	text-align: center;
+	padding: 0 0 50px 0;
+}
+#hours_operation h3{
+	margin-bottom: 5px;
+}
+#hours_operation p{
+	margin: 0;
+}
+
 @media (max-width: 1200px) { /*makes services content reponsive - only quick fix need to come back to this*/
 	#service_categories > div{
 		display: block;
 		width: 90%;
 		margin-left: 5%;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 }
 @media (max-width: 834px) { /*vertically centers two line headline text*/
