@@ -32,6 +32,7 @@ Git
 https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 https://git-scm.com/docs/git-cherry-pick
+https://git-scm.com/docs/git-stash
 
 Frontend Handbook
 https://www.frontendhandbook.com/
