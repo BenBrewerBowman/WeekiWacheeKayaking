@@ -107,7 +107,7 @@ hr{
 	margin: 0;
 }
 
-@media (max-width: 1200px) { /*makes services content reponsive - only quick fix need to come back to this*/
+@media (max-width: 1205px) { /*makes services content reponsive - only quick fix need to come back to this*/
 	#services > div{
 		display: block;
 		width: 90%;
