@@ -68,24 +68,36 @@ Information Architecture
 			- beautiful, clear river
 			
 Responsive Layout
-- Simply one breakpoint at viewport width of 1205px
-- for viewport widths > 1205px
+- Two breakpoints at viewport width of 1215px and 430px
+- for viewport widths > 1215px
 	- Header will include the links to other pages with the center logo being a link to the homepage.
-	  The group of links is set at width of 1000px, and will stay centered as viewport width increases (using 'margin: auto') 
+	  The group of links is set at width of 1200px, and will stay centered as viewport width increases (using 'margin: auto') 
 	- Footer will be made of three sections (contact, social media, and legal information) of different widths that add up to 1000px.
-	  The sections group is fixed at width 1000px, and will stay centered as viewport width increases (using 'margin: auto')
-- for viewport widths <= 1015px
+	  The sections group is fixed at width 1200px, and will stay centered as viewport width increases (using 'margin: auto')
+- for viewport widths <= 1215px
 	- Header will include the logo in the center (using 'margin: auto') which is also link to homepage.
 	  Header then includes a menu button that's on the left, the menu has the four other links that the larger header has.
 	- Footer will still maintain the three sections but they will be 'display: block' on separate lines and content in the sections will be centered
 	  Additionally, the font-size is decreased in the Legal section
+- for viewport widths <= 430px
+	- This is the "small mobile view"; header site title and homepage headline text need to be changed in order to truly responsive to the screen
 
+Learning
+- padding vs. margin
+	- the biggest difference I've seen between these two is that margins will collapse on each other while paddings do not
 
 ______________________________________________________________________________________
-########################### WORK REQUESTS ###########################
+##################### NOTES TO EACH OTHER (DELETE UPON READING?) #####################
 
-Ben:
+To Ben:
+	- Jan 31, Tuesday 12:30PM
+		- mobile view of header now includes the site title with the icon
+			- I included two options in the main.css ('side by side' and 'on top') check it out
+			- with either option if the screen width is too small, it can't fit the width, so I made the title disappear at that point
+		- footer changed a bit
+			- I basically took away the footer section title underlining, condensed the <p> elements, and increased the bottom margin to
+			  achieve the separation that you were trying to apply, tell me what you think
+			- Also, I changed the developer section to black and white, the other code is still there so we can change it back, but tell
+			  me what you think about that as well 
 
-Joseph:
-- Add Weeki Wachee header in mobile menu black header. (Not in button tabs, on main page header) 
-	example:   NavButton, "WEEKI WACHEE", Kayak Logo, "KAYAKING"
+To Joseph:
