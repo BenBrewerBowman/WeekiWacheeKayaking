@@ -202,7 +202,7 @@ body{
 		display: none !important;
 	}
 	/*=============side by side============*/
-	#mobile_logo{
+/*	#mobile_logo{
 		position: absolute;
 		width: 100%;
 		z-index: 3;
@@ -231,10 +231,10 @@ body{
 		top: 5px;
 		width: 50px;
 		height: 50px;
-	}
+	}*/
 	/*=======================================*/
 	/*==================on top===============*/
-/*	#mobile_logo{
+	#mobile_logo{
 		position: absolute;
 		width: 100%;
 		z-index: 3;
@@ -262,7 +262,7 @@ body{
 		left: 76.94px;
 		width: 50px;
 		height: 50px;
-	}*/
+	}
 	/*=======================================*/
 	#mobile_menu_wrapper{
 		position: absolute;
