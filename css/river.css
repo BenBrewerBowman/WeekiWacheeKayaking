@@ -32,7 +32,8 @@ h1{
 	-moz-transition: 0.2s ease-out;
 	-o-transition: 0.2s ease-out;
 	transition: 0.2s ease-out;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
+	overflow: hidden;
 }
 .river_section_info{
 	float: left;
@@ -75,17 +76,14 @@ h1{
 #marine_life1{
 	background-image: url('../Images/marine_life2.jpg');
 	background-position: center;
-	background-repeat: repeat;
 }
 #marine_life2{
 	background-image: url('../Images/marine_life1.jpg');
 	background-position: center;
-	background-repeat: repeat;
 }
 #marine_life3{
 	background-image: url('../Images/marine_life3.jpg');
 	background-position: center;
-	background-repeat: repeat;
 }
 #marine_life h3, #marine_life p{
 	position: relative;
@@ -93,7 +91,7 @@ h1{
 }
 #wwsp1{
 	background-image: url('../Images/wwsp2.jpg');
-	background-position: 50% 50%;
+	background-position: 70% 50%;
 }
 #wwsp2{
 	background-image: url('../Images/wwsp1.jpg');
