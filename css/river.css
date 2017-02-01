@@ -17,6 +17,13 @@ h1{
 	width: 795px;
 	height: 100%;
 }
+.river_section_images a{
+	position: relative;
+	top: 370px;
+	left: 10px;
+	font-size: 8px;
+	color: white;
+}
 .rs_img{
 	float: left;
 	width: 265px;
@@ -25,10 +32,17 @@ h1{
 	-moz-transition: 0.2s ease-out;
 	-o-transition: 0.2s ease-out;
 	transition: 0.2s ease-out;
+	background-repeat: no-repeat;
+}
+.river_section_info{
+	float: left;
+	width: 325px;
+	height: 100%;
+	padding: 0 40px 0 40px;
 }
 #clear_water1{
 	background-image: url('../Images/clear_water2.jpg');
-	background-position: center;
+	background-position: 50% 85%;
 }
 #clear_water2{
 	background-image: url('../Images/clear_water1.jpg');
@@ -36,13 +50,7 @@ h1{
 }
 #clear_water3{
 	background-image: url('../Images/clear_water3.jpg');
-	background-position: center;
-}
-.river_section_info{
-	float: left;
-	width: 325px;
-	height: 100%;
-	padding: 0 40px 0 40px;
+	background-position: 50% 80%;
 }
 #clear_water h3, #clear_water p{
 	position: relative;
@@ -54,7 +62,7 @@ h1{
 }
 #hospital_hole2{
 	background-image: url('../Images/hospital_hole3.jpg');
-	background-position: center;
+	background-position: 50% 80%;
 }
 #hospital_hole3{
 	background-image: url('../Images/hospital_hole2.jpg');
@@ -67,14 +75,17 @@ h1{
 #marine_life1{
 	background-image: url('../Images/marine_life2.jpg');
 	background-position: center;
+	background-repeat: repeat;
 }
 #marine_life2{
 	background-image: url('../Images/marine_life1.jpg');
 	background-position: center;
+	background-repeat: repeat;
 }
 #marine_life3{
 	background-image: url('../Images/marine_life3.jpg');
 	background-position: center;
+	background-repeat: repeat;
 }
 #marine_life h3, #marine_life p{
 	position: relative;
@@ -82,7 +93,7 @@ h1{
 }
 #wwsp1{
 	background-image: url('../Images/wwsp2.jpg');
-	background-position: center;
+	background-position: 50% 50%;
 }
 #wwsp2{
 	background-image: url('../Images/wwsp1.jpg');
