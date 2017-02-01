@@ -1,67 +1,104 @@
-/* homepage.css */
+/* river.css */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Pathway+Gothic+One|Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
-
-#headline{
-	overflow: hidden;
-	color: white;
-}
-
-#headline_background{
-	background: url(../Images/IMG_1036.jpg) no-repeat;
-	background-size: 1280px;
-	background-position: 0px 75px;
-	position: absolute;
-}
-
-#headline h1{
-	position: absolute;
-	width: inherit;
-	margin: 0;
-	text-align: center;
-
-	font-family: 'Sigmar One';
-	top: 309px;
-	font-size: 50px;
-	/*or*/
-/*	font-family: 'Coming Soon';
-	font-size: 50px;
-	top: 310px; */
-	/*or*/
-}
-#headline p{
-	position: absolute;
-	top: 582px;
-	right: 20px; /*not good, fix later*/
-	width: inherit;
-	margin: 0;
-	text-align: right;
-	font-family: 'News Cycle';
-	font-size: 10px;
-}
-#services{
-
-}
-#services h3, #services h4{
+h1{
+	font-family: 'Abel';
 	text-align: center;
 }
-#services h4{
-	margin-left: 20px;
-	margin-right: 20px;
+
+.river_section{
+	width: 100%;
+	height: 400px;
+	font-family: 'Abel';
 }
-#service_categories > div{
-	display: inline-block;
-	width: 300px;
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
+.river_section_images{
+	float: left;
+	width: 795px;
+	height: 100%;
 }
-#rental h3, #tours h3, #special_events h3{
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	background-color: black;
-	color: white;
-	margin: auto;
+.rs_img{
+	float: left;
+	width: 265px;
+	height: 100%;
+	-webkit-transition: 0.2s ease-out;
+	-moz-transition: 0.2s ease-out;
+	-o-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+}
+#clear_water1{
+	background-image: url('../Images/clear_water2.jpg');
+	background-position: center;
+}
+#clear_water2{
+	background-image: url('../Images/clear_water1.jpg');
+	background-position: center;
+}
+#clear_water3{
+	background-image: url('../Images/clear_water3.jpg');
+	background-position: center;
+}
+.river_section_info{
+	float: left;
+	width: 325px;
+	height: 100%;
+	padding: 0 40px 0 40px;
+}
+#clear_water h3, #clear_water p{
+	position: relative;
+	top: 66.78px;
+}
+#hospital_hole1{
+	background-image: url('../Images/hospital_hole1.jpg');
+	background-position: center;
+}
+#hospital_hole2{
+	background-image: url('../Images/hospital_hole3.jpg');
+	background-position: center;
+}
+#hospital_hole3{
+	background-image: url('../Images/hospital_hole2.jpg');
+	background-position: center;
+}
+#hospital_hole h3, #hospital_hole p{
+	position: relative;
+	top: 77.28px;
+}
+#marine_life1{
+	background-image: url('../Images/marine_life2.jpg');
+	background-position: center;
+}
+#marine_life2{
+	background-image: url('../Images/marine_life1.jpg');
+	background-position: center;
+}
+#marine_life3{
+	background-image: url('../Images/marine_life3.jpg');
+	background-position: center;
+}
+#marine_life h3, #marine_life p{
+	position: relative;
+	top: 45.78px;
+}
+#wwsp1{
+	background-image: url('../Images/wwsp2.jpg');
+	background-position: center;
+}
+#wwsp2{
+	background-image: url('../Images/wwsp1.jpg');
+	background-position: center;
+}
+#wwsp3{
+	background-image: url('../Images/wwsp3.jpg');
+	background-position: center;
+}
+#wwsp h3, #wwsp p{
+	position: relative;
+	top: 45.78px;
+}
+.expand_img{
+	width: 775px;
+}
+.shrink_img{
+	width: 10px;
 }
