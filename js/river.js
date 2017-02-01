@@ -1,116 +1,44 @@
 // river.js
 
+// implementation of the 'zoom effect' for the pictures
+// there should be a more elegant way to do this
 
-// this is probably the most super ugliest est way to do this...
+function hoverEffectRiverImgs(imgId) {
+	"use strict";
+	var prefix = imgId.substr(0, imgId.length - 1),
+		number = imgId.substr(imgId.length - 1),
+		numbers = ["1", "2", "3"],
+		notNumber = ["0", "0"], //initialize array with "0"s to prevent null pointers
+		j = 0;
+	for (var i in numbers) { //gather the other two numbers that don't === number
+		if (number != numbers[i]) {
+			notNumber[j] = numbers[i];
+			j++;
+		}
+	}
+	$(imgId).hover(function () { //run hover function
+		$(prefix + notNumber[0]).addClass('shrink_img');
+		$(prefix + notNumber[1]).addClass('shrink_img');
+		$(imgId).addClass('expand_img');
+	}, function () {
+		$(prefix + notNumber[0]).removeClass('shrink_img');
+		$(prefix + notNumber[1]).removeClass('shrink_img');
+		$(imgId).removeClass('expand_img');
+	});
+}
+//call hover effect for all river section images
+hoverEffectRiverImgs("#clear_water_img1");
+hoverEffectRiverImgs("#clear_water_img2");
+hoverEffectRiverImgs("#clear_water_img3");
 
-$('#clear_water1').hover(function () {
-	$('#clear_water2').addClass('shrink_img');
-	$('#clear_water3').addClass('shrink_img');
-	$('#clear_water1').addClass('expand_img');
-}, function () {
-	$('#clear_water2').removeClass('shrink_img');
-	$('#clear_water3').removeClass('shrink_img');
-	$('#clear_water1').removeClass('expand_img');
-});
-$('#clear_water2').hover(function () {
-	$('#clear_water1').addClass('shrink_img');
-	$('#clear_water3').addClass('shrink_img');
-	$('#clear_water2').addClass('expand_img');
-}, function () {
-	$('#clear_water1').removeClass('shrink_img');
-	$('#clear_water3').removeClass('shrink_img');
-	$('#clear_water2').removeClass('expand_img');
-});
-$('#clear_water3').hover(function () {
-	$('#clear_water1').addClass('shrink_img');
-	$('#clear_water2').addClass('shrink_img');
-	$('#clear_water3').addClass('expand_img');
-}, function () {
-	$('#clear_water1').removeClass('shrink_img');
-	$('#clear_water2').removeClass('shrink_img');
-	$('#clear_water3').removeClass('expand_img');
-});
+hoverEffectRiverImgs("#hospital_hole_img1");
+hoverEffectRiverImgs("#hospital_hole_img2");
+hoverEffectRiverImgs("#hospital_hole_img3");
 
-$('#hospital_hole1').hover(function () {
-	$('#hospital_hole2').addClass('shrink_img');
-	$('#hospital_hole3').addClass('shrink_img');
-	$('#hospital_hole1').addClass('expand_img');
-}, function () {
-	$('#hospital_hole2').removeClass('shrink_img');
-	$('#hospital_hole3').removeClass('shrink_img');
-	$('#hospital_hole1').removeClass('expand_img');
-});
-$('#hospital_hole2').hover(function () {
-	$('#hospital_hole1').addClass('shrink_img');
-	$('#hospital_hole3').addClass('shrink_img');
-	$('#hospital_hole2').addClass('expand_img');
-}, function () {
-	$('#hospital_hole1').removeClass('shrink_img');
-	$('#hospital_hole3').removeClass('shrink_img');
-	$('#hospital_hole2').removeClass('expand_img');
-});
-$('#hospital_hole3').hover(function () {
-	$('#hospital_hole1').addClass('shrink_img');
-	$('#hospital_hole2').addClass('shrink_img');
-	$('#hospital_hole3').addClass('expand_img');
-}, function () {
-	$('#hospital_hole1').removeClass('shrink_img');
-	$('#hospital_hole2').removeClass('shrink_img');
-	$('#hospital_hole3').removeClass('expand_img');
-});
+hoverEffectRiverImgs("#marine_life_img1");
+hoverEffectRiverImgs("#marine_life_img2");
+hoverEffectRiverImgs("#marine_life_img3");
 
-$('#marine_life1').hover(function () {
-	$('#marine_life2').addClass('shrink_img');
-	$('#marine_life3').addClass('shrink_img');
-	$('#marine_life1').addClass('expand_img');
-}, function () {
-	$('#marine_life2').removeClass('shrink_img');
-	$('#marine_life3').removeClass('shrink_img');
-	$('#marine_life1').removeClass('expand_img');
-});
-$('#marine_life2').hover(function () {
-	$('#marine_life1').addClass('shrink_img');
-	$('#marine_life3').addClass('shrink_img');
-	$('#marine_life2').addClass('expand_img');
-}, function () {
-	$('#marine_life1').removeClass('shrink_img');
-	$('#marine_life3').removeClass('shrink_img');
-	$('#marine_life2').removeClass('expand_img');
-});
-$('#marine_life3').hover(function () {
-	$('#marine_life1').addClass('shrink_img');
-	$('#marine_life2').addClass('shrink_img');
-	$('#marine_life3').addClass('expand_img');
-}, function () {
-	$('#marine_life1').removeClass('shrink_img');
-	$('#marine_life2').removeClass('shrink_img');
-	$('#marine_life3').removeClass('expand_img');
-});
-
-$('#wwsp1').hover(function () {
-	$('#wwsp2').addClass('shrink_img');
-	$('#wwsp3').addClass('shrink_img');
-	$('#wwsp1').addClass('expand_img');
-}, function () {
-	$('#wwsp2').removeClass('shrink_img');
-	$('#wwsp3').removeClass('shrink_img');
-	$('#wwsp1').removeClass('expand_img');
-});
-$('#wwsp2').hover(function () {
-	$('#wwsp1').addClass('shrink_img');
-	$('#wwsp3').addClass('shrink_img');
-	$('#wwsp2').addClass('expand_img');
-}, function () {
-	$('#wwsp1').removeClass('shrink_img');
-	$('#wwsp3').removeClass('shrink_img');
-	$('#wwsp2').removeClass('expand_img');
-});
-$('#wwsp3').hover(function () {
-	$('#wwsp1').addClass('shrink_img');
-	$('#wwsp2').addClass('shrink_img');
-	$('#wwsp3').addClass('expand_img');
-}, function () {
-	$('#wwsp1').removeClass('shrink_img');
-	$('#wwsp2').removeClass('shrink_img');
-	$('#wwsp3').removeClass('expand_img');
-});
+hoverEffectRiverImgs("#wwsp_img1");
+hoverEffectRiverImgs("#wwsp_img2");
+hoverEffectRiverImgs("#wwsp_img3");
