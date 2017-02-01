@@ -47,6 +47,7 @@ List of sites for inspiration:
 http://www.westernriver.com/whitewater-rafting-utah
 http://www.nomadicmatt.com/
 http://davidsonflyfishing.com/
+http://www.snowshoemtn.com/
 
 
 ______________________________________________________________________________________
@@ -85,6 +86,7 @@ Responsive Layout
 Learning
 - padding vs. margin
 	- the biggest difference I've seen between these two is that margins will collapse on each other while paddings do not
+	- margins allow for elements 'behind' it to be accessed while paddings do not
 
 ______________________________________________________________________________________
 ##################### NOTES TO EACH OTHER (DELETE UPON READING?) #####################
@@ -98,6 +100,14 @@ To Ben:
 			- I basically took away the footer section title underlining, condensed the <p> elements, and increased the bottom margin to
 			  achieve the separation that you were trying to apply, tell me what you think
 			- Also, I changed the developer section to black and white, the other code is still there so we can change it back, but tell
-			  me what you think about that as well 
+			  me what you think about that as well
+	- Feb 1, Wednesday 4:45PM
+		- the river page has been completed, definitely need to discuss the look and feel of it
+			- the basic layout are staggered image groups with corresponding text blocks
+			- each image groups contains three images, when hovering over an image, there is a zoom effect I implemented using javascript/jquery
+			- the picture sizes are so different that some may look kinda funky ~ wish we had a bunch of good pictures... lol
+			- I used the same font-family from the home page to keep it consistent
+			- the headline is just a motto
+			- reponsive mode was created too, will discuss that
 
 To Joseph:
