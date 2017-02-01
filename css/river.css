@@ -3,6 +3,7 @@
 #river_headline{
 	font-family: 'Abel'; /*import included in main.css*/
 	text-align: center;
+	margin: 40px 0 40px 0;
 }
 .river_section{
 	width: 100%;
@@ -108,5 +109,33 @@
 	width: 10px;
 }
 @media (max-width: 1215px) {
-
+	.river_section{
+		height: 600px;
+	}
+	.river_section_img_wrapper{
+		position: absolute;
+		width: 98%;
+		height: 600px;
+		background-color: black;
+	}
+	.river_section_info{
+		position: absolute;
+		width: 70%;
+		height: 600px;
+		padding: 0;
+		margin: 0 15% 0 15%;
+		z-index: 1;
+		text-align: center;
+		color: white;
+	}
+	.river_section_img{
+		height: 100%;
+	}
+	.mobile_expand{
+		width: 100%;
+		opacity: 0.7;
+	}
+	.river_section_img_wrapper a{
+		top: 570px;
+	}
 }
