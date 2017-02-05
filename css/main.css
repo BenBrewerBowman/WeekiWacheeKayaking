@@ -16,7 +16,7 @@ body{
 
 #content{
 	overflow: auto;
-	padding-top: 75px;
+	padding-top: 12px;
 	background-color: #ecf0f1; /*super light grey*/
 }
 
