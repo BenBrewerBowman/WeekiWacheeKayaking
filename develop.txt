@@ -19,6 +19,9 @@ http://www.colorpicker.com/
 Fonts
 https://fonts.google.com/
 
+Photo Sliders
+http://www.jssor.com/
+
 
 ______________________________________________________________________________________
 References:
@@ -89,25 +92,16 @@ Learning
 	- margins allow for elements 'behind' it to be accessed while paddings do not
 
 ______________________________________________________________________________________
-##################### NOTES TO EACH OTHER (DELETE UPON READING?) #####################
+##################### NOTES TO EACH OTHER #####################
 
 To Ben:
-	- Jan 31, Tuesday 12:30PM
-		- mobile view of header now includes the site title with the icon
-			- I included two options in the main.css ('side by side' and 'on top') check it out
-			- with either option if the screen width is too small, it can't fit the width, so I made the title disappear at that point
-		- footer changed a bit
-			- I basically took away the footer section title underlining, condensed the <p> elements, and increased the bottom margin to
-			  achieve the separation that you were trying to apply, tell me what you think
-			- Also, I changed the developer section to black and white, the other code is still there so we can change it back, but tell
-			  me what you think about that as well
-	- Feb 1, Wednesday 4:45PM
-		- the river page has been completed, definitely need to discuss the look and feel of it
-			- the basic layout are staggered image groups with corresponding text blocks
-			- each image groups contains three images, when hovering over an image, there is a zoom effect I implemented using javascript/jquery
-			- the picture sizes are so different that some may look kinda funky ~ wish we had a bunch of good pictures... lol
-			- I used the same font-family from the home page to keep it consistent
-			- the headline is just a motto
-			- reponsive mode was created too, will discuss that
+
 
 To Joseph:
+	Feb 5 - Changed to slider header image. Added homepage.js, 
+	Issues:
+		river title not in position. Idk why, but it is not in position anymore. We can change later.
+		Slider needs a mobile option (I will do later)
+		I can not figure out why the page is extending beyond 100%. For some reason it goes out to about 105% width. 		Maybe you can look at it.
+		
+		
