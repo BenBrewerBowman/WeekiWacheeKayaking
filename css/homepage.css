@@ -56,7 +56,7 @@
 /* Position dots at bottom of image */
 .dotsPosition {
   color: #f2f2f2;
-  padding: 8px 12px;
+  /*padding: 8px 12px; causes width to be over 100%*/
   position: absolute;
 	bottom: 15px;
   width: 100%;
