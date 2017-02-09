@@ -90,6 +90,7 @@ Learning
 - padding vs. margin
 	- the biggest difference I've seen between these two is that margins will collapse on each other while paddings do not
 	- margins allow for elements 'behind' it to be accessed while paddings do not
+	- background-color will be applied to paddings but not margins
 
 ______________________________________________________________________________________
 ##################### NOTES TO EACH OTHER #####################
