@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weeki Wachee Kayaking</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="img/png" href="Images/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rates.css"/>
+		<link rel="stylesheet" href="css/leaflet.css"/>
+		<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+	</head>
+	<body>
+
+		<!-- NavBar  -->
+		<div id="header">
+			<div class="mobile_only">
+				<div id="mobile_logo">
+					<a href="index.html">
+						<h4 class="small_mobile_hidden">WEEKI WACHEE KAYAKING</h4>
+						<img src="Images/big-yellow-canoe.png"/>
+					</a>
+				</div>
+				<div id="mobile_menu_wrapper">
+					<button onclick="toggleMenuDrop()"><img src="Images/mobile-yellow-menu.png"/></button>
+					<ul id="mobile_menu" class="hidden">
+						<li><a href="river.html">WEEKI WACHEE RIVER</a></li>
+						<li><a href="rules.html">RIVER RULES</a></li>
+						<li><a href="rates.html">RATES/TOURS</a></li>
+						<li><a href="about.html">ABOUT US</a></li>
+						<li><a href="contact.html">CONTACT US</a></li>
+						<li><a href="faqs.html">FAQ's</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul id="menu" class="center_block">
+				<li><a href="river.html"><span>WEEKI WACHEE RIVER</span></a></li>
+				<li><a href="rules.html">RIVER RULES</a></li>
+				<li><a href="rates.html">RATES/TOURS</a></li>
+				<li><a href="index.html"><img src="Images/big-yellow-canoe.png"/></a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+				<li><a href="contact.html">CONTACT US</a></li>
+				<li><a href="faqs.html">FAQ's</a></li>
+			</ul>
+		</div>
+		<!-- NavBarEnd  -->
+
+		<!-- Content  -->
+		<div id="content" class="center_block font_abel" >
+			<div id="services" class=""></div>
+			<div id="services_overview">
+				<h1>CALL TODAY AND MAKE A RESERVATION</h1>
+				<h4>Our goal at Weeki Wachee Kayaking is to provide you with the best possible experience on the river. Upon arriving, park at our private parking lot on Cortez Blvd. and we will take you to one of the three launch points and we can take care of the transportation. Then take your time enjoying the crystal clear river and amazing wildlife and we will pick you up at the landing point near the "Tailgate Sports Bar". Weeki Wachee Kayaking prides itself on providing a unique guest experience. We want to work with you to create a hassle-free and memorable experience.</h4>
+				<div id="services_overview_visualization"></div>
+			</div>
+			<div style="width: 100%; height: 100px"></div>
+			<div id="rentals" class="service_section">
+				<h2>RENTALS</h2>
+				<hr>
+				<div id="rates">
+					<h3>RATES</h3>
+					<h4>All rates include shuttle service to the Weeki Wachee Springs State Park Kayak ramp.</h4>
+					<h4>All rentals include: paddle/oars, USCG Approved Life Jacket with whistle, safety instructions and wildlife information briefing.</h4>
+					<table>
+						<tr>
+							<td>RENTAL</td>
+							<td>PRICE</td>
+						</tr>
+						<tr class="entry_row">
+							<td>Tandem Kayaks</td>
+							<td><strong>$40.00</strong></td>
+						</tr>
+						<tr class="entry_row">
+							<td>Canoes</td>
+							<td><strong>$40.00</strong></td>
+						</tr>
+						<tr class="entry_row">
+							<td>Single Kayaks</td>
+							<td><strong>$35.00</strong></td>
+						</tr>
+						<tr class="entry_row">
+							<td>Personal Boat Launching</td>
+							<td><strong>$20.00 per boat</strong></td>
+						</tr>
+					</table>
+					<p>* prices do not include sales tax</p>
+				</div>
+				<div id="what_to_bring">
+					<h3>WHAT TO BRING</h3>
+					<ul>
+						<li>Always bring water for your kayaking or canoe trip on the Weeki Wachee River.</li>
+						<li>Bring snacks or lunch as the trip is usually 2 ½ - 3 hours and you may get hungry.</li>
+						<li>In the summer months bring sunscreen and bug spray.</li>
+						<li>Bring a change of clothes and towels as you may get wet or swim during your trip</li>
+						<li>Bring snorkels and an underwater camera to capture some amazing pictures.</li>
+						<li>We can take care of some of your items; however, you may want to bring a waterproof bag or container for your phone, keys or other valuables.</li>
+						<li>Bring warmer clothes for the winter months</li>
+					</ul>
+				</div>
+			</div>
+			<div id="tours" class="service_section">
+				<h2>TOURS</h2>
+				<hr>
+				<div class="service_description">
+					<p>Weeki Wachee Kayaking will do everything possible to make your relaxing day kayaking or canoeing the Weeki Wachee River memorable. With crystal clear waters that flows from a magnitude 1 spring, Weeki Wachee is one of the most beautiful rivers in the United States. The majority of the river, with depths ranging from 1 to 12 feet, make it perfect to see the marine life. There is also an abundance of beautiful wildlife on the shore to see as well. We work with you in advance to plan out the tour that fits your needs best.</p>
+					<h4>CALL TO PLAN WITH WEEKI WACHEE KAYAKING</h4>
+				</div>
+				<div class="service_examples">
+
+					<!-- <div id="tours_manatee" class="example">
+						<img src="Images/tour-manatee-example.png"/>
+						<h3>MANATEE TOURS</h3>
+					</div>
+					<div id="tours_guided" class="example">
+						<img src="Images/tour-guided-example.png"/>
+						<h3>GUIDED TOURS</h3>
+					</div>
+					<div class="service_options">
+						<p>MANATEE TOURS</p>
+						<p>GUIDED TOURS</p>
+					</div>
+					<div class="service_options_description">
+						<div></div>
+						<div></div>
+					</div> -->
+
+
+					<div class="service_examples_dropdown">
+						<select id="tours_dropdown" class="dropdown">
+							<option value="Tmanatee">Manatee Tours</option>
+							<option value="Tguided">Guided Tours</option>
+						</select>
+					</div>
+					<div class="examples">
+						<div id="tours_manatee">
+							<img src="Images/tour-manatee-example.png" />
+							<p>Did shy say mention enabled through elderly improve. As at so believe account evening behaved hearted is. House is tiled we aware. It ye greatest removing concerns an overcame appetite. Manner result square father boy behind its his. Their above spoke match ye mr right oh as first. Be my depending to believing perfectly concealed household. Point could to built no hours smile sense.<br><br> 
+
+							REPLACE WITH TEXT ABOUT MANATEE TOURS</p>
+						</div>
+						<div id="tours_guided">
+							<img src="Images/tour-guided-example.png" />
+							<p>An an valley indeed so no wonder future nature vanity. Debating all she mistaken indulged believed provided declared. He many kept on draw lain song as same. Whether at dearest certain spirits is entered in to. Rich fine bred real use too many good. She compliment unaffected expression favourable any. Unknown chiefly showing to conduct no. Hung as love evil able to post at as.<br><br>
+
+							REPLACE WITH TEXT ABOUT GUIDED TOURS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="special_events" class="service_section">
+				<h2>SPECIAL EVENTS</h2>
+				<hr>
+				<div>
+					<p>Weeki Wachee Kayaking will do everything possible to make your relaxing day kayaking or canoeing the Weeki Wachee River memorable. INSERT TEXT ABOUT SPECIAL EVENTS</p>
+					<h4>CALL TO PLAN WITH WEEKI WACHEE KAYAKING</h4>
+				</div>
+				<div class="service_examples">
+					<div class="service_examples_dropdown">
+						<select id="special_dropdown" class="dropdown">
+							<option value="Sraces">Kayak Races</option>
+							<option value="Safterhours">After Hours Kayaking</option>
+							<option value="Shunts">Scavenger/Treasure Hunts</option>
+							<option value="Steam">Team Building Activities</option>
+							<option value="Soccasions">Special Occasions</option>
+						</select>
+					</div>
+					<div class="examples">
+						<div id="special_races">
+							<img src="Images/special-races-example.png"/>
+							<p>Warmly little before cousin sussex entire men set. Blessing it ladyship on sensible judgment settling outweigh. Worse linen an of civil jokes leave offer. Parties all clothes removal cheered calling prudent her. And residence for met the estimable disposing. Mean if he they been no hold mr. Is at much do made took held help. Latter person am secure of estate genius at.<br><br>
+
+							REPLACE WITH TEXT ABOUT KAYAK RACES</p>
+						</div>
+						<div id="special_afterhours">
+							<!-- <img src="Images/?"/> -->
+							<p>Nor hence hoped her after other known defer his. For county now sister engage had season better had waited. Occasional mrs interested far expression acceptance. Day either mrs talent pulled men rather regret admire but. Life ye sake it shed. Five lady he cold in meet up. Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly.<br><br>
+
+							REPLACE WITH TEXT ABOUT AFTER HOURS KAYAKING</p>
+						</div>
+						<div id="special_hunts">
+							<img src="Images/special-hunts-example.png"/>
+							<p>Nor hence hoped her after other known defer his. For county now sister engage had season better had waited. Occasional mrs interested far expression acceptance. Day either mrs talent pulled men rather regret admire but. Life ye sake it shed. Five lady he cold in meet up. Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly.<br><br>
+
+							REPLACE WITH TEXT ABOUT SCAVENGER/TREASURE HUNTS</p>
+						</div>
+						<div id="special_team">
+							<img src="Images/special-team-example.png"/>
+							<p>Nor hence hoped her after other known defer his. For county now sister engage had season better had waited. Occasional mrs interested far expression acceptance. Day either mrs talent pulled men rather regret admire but. Life ye sake it shed. Five lady he cold in meet up. Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly.<br><br>
+
+							REPLACE WITH TEXT ABOUT TEAM BUILDING ACTIVITIES</p>
+						</div>
+						<div id="special_occasions">
+							<img src="Images/special-occasions-example.png"/>
+							<p>Nor hence hoped her after other known defer his. For county now sister engage had season better had waited. Occasional mrs interested far expression acceptance. Day either mrs talent pulled men rather regret admire but. Life ye sake it shed. Five lady he cold in meet up. Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly.<br><br>
+
+							REPLACE WITH TEXT ABOUT SPECIAL OCCASIONS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div style="width: 100%; height: 100px"></div>
+
+
+
+			<div id="reservation_notes" class="service_notes">
+				<h2>NOTE ABOUT RESERVATIONS</h2>
+				<h4>Please call ahead to reserve your boats and trip time, and plan to arrive 15 minutes early to check in. If you happen to run late, let us know as soon as possible so we we can try to work you in for the next soonest departure available.</h4>
+				<h4>***Making reservations at least a day in advance gives you the most options for securing the kind of boat you prefer and the departure time you want***</h4>
+				<h4>Guests who call for same-day trips may encounter longer telephone hold times and experience delays in river departures due to launches in progress. Please leave a message. Voice mails will be returned as soon as possible to assist you planning your trip.</h4>
+				<h4>Walkups are welcome but will be worked in among the reserved, pre-scheduled departures</h4>
+			</div>
+			
+			<div id="rules" class="service_notes">
+				<h2>RULES</h2>
+				<ul>
+					<li>Alcohol is not permitted on the Weeki Wachee River. Glass bottles are also not permitted.</li>
+					<li>Pets are not permitted unless you launch a private boat from a residence or another public area that allows dogs. Service animals are permitted on the river.</li>
+					<li>You are not allowed to exit your boat in the first mile of the river located inside of the state park.</li>
+					<li>All persons on a kayak or canoe must have a USCG approved flotation device with a whistle. Both are provided to you by Weeki Wachee Kayaking.</li>
+					<li>You are not permitted to touch, feed, molest or ride Manatee. This causes stress, endangers the manatee and can cause pernanent damage or even death.</li>
+				</ul>
+			</div>
+			
+		</div>
+		<!-- ContentEnd  -->
+
+		<!-- Footer  -->
+		<div id="footer">
+			<div class="center_block">
+				<div id="contact" class="footer_section custom_action_link">
+					<h3>WEEKI WACHEE KAYAKING</h3>
+					<a href="https://www.google.com/maps/place/8103+Cortez+Blvd,+Weeki+Wachee,+FL+34607/@28.529652,-82.5920807,17z/data=!3m1!4b1!4m5!3m4!1s0x88e821ba095dd169:0xd182fbd55ad7aec9!8m2!3d28.529652!4d-82.589892" target="_blank">
+						<p>8103 Cortez Blvd. <br> Weeki Wachee, FL 34607</p>
+					</a>
+					<a href="tel:352-684-7180"><p>(352) 684-7180</p></a>
+					<a href="mailto:weekiwacheekayakinginfo@gmail.com">
+						<p>weekiwacheekayakinginfo@gmail.com</p>
+					</a>
+				</div>
+				<div id="social_media" class="footer_section custom_action_link">
+					<h3>SOCIAL MEDIA</h3>
+					<a id="facebook_link" href="https://www.facebook.com/Weekiwacheekayaking/">
+						<div class="icon_mask"><img src="Images/facebook-logo-button.png"/></div>
+						<p>Like us on FaceBook</p>
+					</a>
+					<a id="tripadvisor_link" href="https://www.tripadvisor.com/">
+						<div class="icon_mask"><img src="Images/tripadvisor-logotype.png"/></div>
+						<p>Check us out on TripAdvisor</p>
+					</a>
+				</div>
+				<div id="legal" class="footer_section">
+					<h3>LEGAL</h3>
+					<div>Kayak Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>FaceBook Icon made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>TripAdvisor Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flati class="mobile_footer_section"con">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>Menu button icon made by <a href="http://www.flaticon.com/authors/chris-veigt" title="Chris Veigt">Chris Veigt</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>Rental icon made by <a href="http://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>Tour icon made by <a href="http://www.flaticon.com/authors/popcorns-arts" title="Popcorns Arts">Popcorns Arts</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>Sp. Event icon made by <a href="http://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>Check icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<!-- NEW SHIT HERE^ -->
+					<p>copyright all rights reserved ...</p>
+				</div>
+			</div>
+		</div>
+		<div id="developers"><p>WEBSITE CREATED BY: FOCUS-BRO!</p></div>
+		<!-- FooterEnd  -->
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/leaflet.js"></script>
+        <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.standalone.js'></script>
+		<script src="js/main.js"></script>
+		<script src="js/rates.js"></script>
+
+	</body>
+</html>
