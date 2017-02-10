@@ -8,6 +8,9 @@ hr{
 .font_abel{
 	font-family: 'Abel';
 }
+#services_overview h1{
+	margin: 40px 0 40px 0;
+}
 #services_overview h1, #services_overview h4{
 	text-align: center;
 }
