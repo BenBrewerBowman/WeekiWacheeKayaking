@@ -96,13 +96,12 @@ ________________________________________________________________________________
 ##################### NOTES TO EACH OTHER #####################
 
 To Ben:
+	February 10, 12:30AM
+	Merged current state of working branch of rates/tours pagea and touched up some of the code to resolve some issues
+		- We're gonna need to have a convo over the phone to go over everything lol
+		- commit comments might explains most of it, if you can look at it...
+		- good shit bruh :).
 
 
 To Joseph:
-	Feb 5 - Changed to slider header image. Added homepage.js, 
-	Issues:
-		river title not in position. Idk why, but it is not in position anymore. We can change later.
-		Slider needs a mobile option (I will do later)
-		I can not figure out why the page is extending beyond 100%. For some reason it goes out to about 105% width. 		Maybe you can look at it.
-		
 		
