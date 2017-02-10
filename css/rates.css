@@ -1,0 +1,189 @@
+/*rates.css*/
+
+hr{
+	width: 70%;
+}
+
+
+.font_abel{
+	font-family: 'Abel';
+}
+#services_overview h1, #services_overview h4{
+	text-align: center;
+}
+#services_overview_visualization{
+	width: 100%;
+	height: 300px;
+	background-color: #768196;
+}
+
+
+.service_section{
+	overflow: auto;
+	margin: 40px 0 40px 0;
+}
+.service_section h2{
+	margin: 0;
+}
+.service_section hr{
+	width: 80%;
+	margin: 0 0 15px 0;
+}
+.service_section > div{
+	float: left;
+	width: 560px;
+	padding: 0 20px 0 20px;
+}
+
+
+#services_overview_visualization{
+	background-image: url("../Images/visualization.png");
+}
+#rentals > div{
+	float: left;
+	width: 560px;
+	padding: 0 20px 0 20px;
+}
+#rates tr:first-child{
+	background-color: #3c4b69;
+	color: white;
+}
+#rates td{
+	padding: 0 10px 0 10px;
+}
+#rates td:first-child{
+	width: 300px;
+}
+#rates td{
+	float: left; /*removes space between td's*/
+}
+#rates .entry_row:hover{
+	background-color: #768196;
+	color: white;
+}
+#what_to_bring ul{
+	list-style-image: url('../Images/check-mark.png');
+	margin: 12px 0 12px 0;
+}
+#what_to_bring li{
+	padding: 6px 0 6px 0;
+}
+
+
+/*.service_description{
+	width: 100%;
+	text-align: center;
+}*/
+.service_examples{
+	height: 400px;
+	margin-top: 16px;
+}
+
+
+
+/*.service_options{
+	width: 404px;
+	overflow: auto;
+	margin: auto;
+}
+.service_options > p{
+	float: left;
+	width: 200px;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	text-align: center;
+}*/
+
+
+.example{
+	margin: 0 5px 0 5px;
+	width: 590px;
+	height: 200px;
+	float: left;
+	background-color: black;
+	overflow: hidden;
+}
+.example img{
+	opacity: 0.7;
+}
+.example h3{
+	position: absolute;
+	top: 1305px;
+	width: 590px;
+	text-align: center;
+	color: white;
+}
+.example:hover{
+	cursor: pointer;
+}
+.example:hover > img{
+	opacity: 1;
+}
+.example:hover > h3{
+}
+.service_examples_dropdown{
+	width: 100%;
+	height: 40px;
+}
+.dropdown{
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	font-family: 'Abel';
+	background-color: black;
+	color: white;
+}
+.examples{
+	background-color: white;
+	width: 100%;
+	height: 360px;
+}
+.examples > div{
+	display: none;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+}
+.examples > div:first-child{
+	display: block;
+}
+.examples img{
+	position: absolute;
+	opacity: 0.6;
+	width: 560px;
+	height: 360px;
+	overflow: hidden;
+	z-index: 0;
+}
+.examples p{
+	position: absolute;
+	margin: 0;
+	width: 560px;
+	height: 360px;
+}
+
+#tours{
+	/*background-color: #79b8d0;*/
+}
+#tours_manatee{
+}
+#special_events{
+	/*background-color: #409abd;*/
+}
+
+
+
+
+.service_notes{
+	width: 94%;
+	margin: 0 3% 0 3%;
+	padding-bottom: 40px;
+}
+#rules ul{
+	list-style-type: circle;
+}
+#rules li{
+	padding: 10px 0 10px 0;
+}
+
