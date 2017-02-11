@@ -1,5 +1,8 @@
 //rates.js
 
+
+/*-----------------------------------------------------------------------------*/
+/* Joseph Code */
 $("select").on("change", function () {
 	"use strict";
 	var sectionChar = this.value.substring(0, 1),
@@ -12,7 +15,7 @@ $("select").on("change", function () {
 		section = "special";
 	}
 	var exampleId = "#" + section + "_" + selectedValue,
-		options =  "#" + section + "_dropdown option" 
+		options =  "#" + section + "_dropdown option"
 
 	$(options).each(function () {
 		"use strict";
@@ -24,7 +27,6 @@ $("select").on("change", function () {
 	});
 	$(exampleId).css("display", "block");
 });
-
 
 
 // var weekiWacheeCoordinates = [28.5156, -82.5729];
@@ -63,8 +65,14 @@ function plotPoints() {
 	var wwChristianCamp = L.marker([28.534618, -82.617414]).addTo(mymap);
 	wwChristianCamp.bindPopup("Weeki Wachee<br>Christian Camp");
 	var tailGaters = L.marker([28.529066, -82.5893509]).addTo(mymap);
-	tailGaters.bindPopup("Tail Gaters");	
+	tailGaters.bindPopup("Tail Gaters");
 }
+/* Joseph Code END */
+/*-----------------------------------------------------------------------------*/
 
 
+/*-----------------------------------------------------------------------------*/
+/* Ben Code */
 
+/* Ben Code END */
+/*-----------------------------------------------------------------------------*/

@@ -1,5 +1,7 @@
 // river.js
 
+/*-----------------------------------------------------------------------------*/
+/* Joseph Code */
 // implementation of the 'zoom effect' for the pictures
 // there should be a more elegant way to do this
 
@@ -42,3 +44,12 @@ hoverEffectRiverImgs("#marine_life_img3");
 hoverEffectRiverImgs("#wwsp_img1");
 hoverEffectRiverImgs("#wwsp_img2");
 hoverEffectRiverImgs("#wwsp_img3");
+/* Joseph Code END */
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+/* Ben Code */
+
+/* Ben Code END */
+/*-----------------------------------------------------------------------------*/

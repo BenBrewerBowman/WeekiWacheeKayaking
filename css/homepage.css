@@ -94,8 +94,13 @@
   	from {opacity: .7}
   	to {opacity: 1}
 }
+/* COVER SLIDESHOW END */
+/* -----------------------------------------------------------------------------*/
 
 
+
+/* -----------------------------------------------------------------------------*/
+/* Welcome */
 hr{
 	width: 50%;
 }
@@ -133,7 +138,12 @@ hr{
 	margin-left: 20px;
 	margin-right: 20px;
 }
+/* Welcome END*/
+/* -----------------------------------------------------------------------------*/
 
+
+/* -----------------------------------------------------------------------------*/
+/* Service, Tours, Spec Events */
 #services{
 	padding: 30px 0 30px 0; /*top right bottom left*/
 }
@@ -167,7 +177,12 @@ hr{
 	background-color: white;
 	color: black;
 }
+/* Service, Tours, Spec Events END */
+/* -----------------------------------------------------------------------------*/
 
+
+/* -----------------------------------------------------------------------------*/
+/* Hours Of Operation */
 #hours_operation{
 	font-family: 'Abel';
 	text-align: center;
@@ -182,7 +197,12 @@ hr{
 #hours_operation p{
 	margin: 0;
 }
+/* Hours Of Operation END */
+/* -----------------------------------------------------------------------------*/
 
+
+/* -----------------------------------------------------------------------------*/
+/* Responsive Layout */
 @media (max-width: 1215px) { /*makes services content reponsive - only quick fix need to come back to this*/
 	#services > div{
 		display: block;
@@ -201,3 +221,5 @@ hr{
 		top: 237px;
 	}
 }
+/* Responsive Layout END */
+/* -----------------------------------------------------------------------------*/

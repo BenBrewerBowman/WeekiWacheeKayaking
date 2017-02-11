@@ -1,6 +1,8 @@
 // homepage.js
 
-//Slideshow. Changes image and highlights dot at bottom
+/*-----------------------------------------------------------------------------*/
+/* Slideshow */
+//Changes image and highlights dot at bottom
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,3 +29,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+/* SlideShow END */
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+/* Ben Code */
+
+/* Ben Code END */
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+/* Joseph Code */
+
+/* Joseph Code END */
+/*-----------------------------------------------------------------------------*/
