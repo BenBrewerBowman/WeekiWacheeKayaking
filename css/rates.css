@@ -20,15 +20,18 @@ hr{
 	height: 300px;
 	background-color: #768196;
 }
+#services_overview_visualization{
+	background-image: url("../Images/visualization.png");
+}
 /* Intro END */
 /*-----------------------------------------------------------------------------*/
 
 
 /*-----------------------------------------------------------------------------*/
-/* Rentals */
+/* styles common to all service section divs */
 .service_section{
-	overflow: auto;
 	margin: 40px 0 40px 0;
+	overflow: auto;
 }
 .service_section h2{
 	margin: 0;
@@ -39,14 +42,16 @@ hr{
 }
 .service_section > div{
 	float: left;
-	width: 560px;
-	padding: 0 20px 0 20px;
 }
+.service_section > h4{
+	text-align: center;
+}
+/* styles common to all service section divs END */
+/*-----------------------------------------------------------------------------*/
 
 
-#services_overview_visualization{
-	background-image: url("../Images/visualization.png");
-}
+/*-----------------------------------------------------------------------------*/
+/* Rentals */
 #rentals > div{
 	float: left;
 	width: 560px;
@@ -76,112 +81,64 @@ hr{
 #what_to_bring li{
 	padding: 6px 0 6px 0;
 }
-/* Rentals END*/
+/* Rentals END */
 /*-----------------------------------------------------------------------------*/
 
 
 /*-----------------------------------------------------------------------------*/
-/* Tours */
+/* classes for divs within tours and special events */
 
-/*.service_description{
+.service_description{
 	width: 100%;
 	text-align: center;
-}*/
-.service_examples{
-	height: 400px;
-	margin-top: 16px;
 }
-
-/*.service_options{
-	width: 404px;
+.service_examples{
 	overflow: auto;
 	margin: auto;
 }
-.service_options > p{
-	float: left;
-	width: 200px;
-	border-right: 1px solid grey;
-	border-left: 1px solid grey;
-	text-align: center;
-}*/
-
 .example{
-	margin: 0 5px 0 5px;
-	width: 590px;
-	height: 200px;
+	display: flex;
+	align-items: center;
 	float: left;
-	background-color: black;
+	width: 380px;
+	height: 280px;
+	margin: 10px;
+
 	overflow: hidden;
+	background-color: black;
 }
-.example img{
-	opacity: 0.7;
-}
-.example h3{
+.example > img, .example > h3, .example > p{
 	position: absolute;
-	top: 1305px;
-	width: 590px;
+	width: 380px;
+}
+.example > h3, .example > p{
+	position: absolute;
 	text-align: center;
+	margin: 0;
 	color: white;
+}
+.example > h3{
+	font-size: 36px;
+}
+.example > h3 span{
+	padding: 5px;
+	
+}
+.example > p{
+	display: none;
+	width: 360px;
+	margin: 0 10px 0 10px;
 }
 .example:hover{
 	cursor: pointer;
 }
+.example:hover > h3 span{
+	border: 4px solid white;
+}
 .example:hover > img{
-	opacity: 1;
+	opacity: 0.7;
 }
-.example:hover > h3{
-}
-.service_examples_dropdown{
-	width: 100%;
-	height: 40px;
-}
-.dropdown{
-	width: 100%;
-	height: 40px;
-	font-size: 16px;
-	font-family: 'Abel';
-	background-color: black;
-	color: white;
-}
-.examples{
-	background-color: white;
-	width: 100%;
-	height: 360px;
-}
-.examples > div{
-	display: none;
-	width: 100%;
-	height: 100%;
-	color: white;
-	background-color: black;
-}
-.examples > div:first-child{
-	display: block;
-}
-.examples img{
-	position: absolute;
-	opacity: 0.6;
-	width: 560px;
-	height: 360px;
-	overflow: hidden;
-	z-index: 0;
-}
-.examples p{
-	position: absolute;
-	margin: 0;
-	width: 560px;
-	height: 360px;
-}
-
-#tours{
-	/*background-color: #79b8d0;*/
-}
-#tours_manatee{
-}
-#special_events{
-	/*background-color: #409abd;*/
-}
-/* Tours END */
+/* classes for divs within tours and special events END */
 /*-----------------------------------------------------------------------------*/
 
 
