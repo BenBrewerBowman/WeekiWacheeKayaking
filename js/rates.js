@@ -3,6 +3,19 @@
 
 /*-----------------------------------------------------------------------------*/
 /* Joseph Code */
+
+//responsive styling of page
+$(".service_examples").each(function () {
+	"use strict";
+	var divWidth = $(this).width();
+	$(this).css("margin", function () {
+		"use strict";
+		return "0 " + ((1200 - divWidth) / 2) + "px";
+	});
+});
+
+
+//functionality of elements on page
 $("select").on("change", function () {
 	"use strict";
 	var sectionChar = this.value.substring(0, 1),
@@ -27,6 +40,26 @@ $("select").on("change", function () {
 	});
 	$(exampleId).css("display", "block");
 });
+
+$(".example").click(function () {
+	if ($(this).children("p").css("display") === "none") {
+		$(this).children("p").css("display", "block");
+		$(this).children("h3").css("display", "none");
+		$(this).children("img").css("opacity", 0.7);
+	} else {
+		$(this).children("p").css("display", "none");
+		$(this).children("h3").css("display", "block");
+		$(this).hover(function () {
+			$(this).children("img").css("opacity", 0.7);
+		},
+		function () {
+			$(this).children("img").css("opacity", "initial");
+		});
+	}
+});
+
+
+
 
 
 // var weekiWacheeCoordinates = [28.5156, -82.5729];
