@@ -45,16 +45,9 @@ $(".example").click(function () {
 	if ($(this).children("p").css("display") === "none") {
 		$(this).children("p").css("display", "block");
 		$(this).children("h3").css("display", "none");
-		$(this).children("img").css("opacity", 0.7);
 	} else {
 		$(this).children("p").css("display", "none");
 		$(this).children("h3").css("display", "block");
-		$(this).hover(function () {
-			$(this).children("img").css("opacity", 0.7);
-		},
-		function () {
-			$(this).children("img").css("opacity", "initial");
-		});
 	}
 });
 
