@@ -53,7 +53,6 @@ hr{
 /*-----------------------------------------------------------------------------*/
 /* Rentals */
 #rentals > div{
-	float: left;
 	width: 560px;
 	padding: 0 20px 0 20px;
 }
@@ -162,3 +161,46 @@ hr{
 }
 /* Rules, Note About Reservations */
 /*-----------------------------------------------------------------------------*/
+
+
+@media (max-width: 1215px) {
+	#rates, #what_to_bring{
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	#rates{
+		margin-bottom: 75px;
+	}
+
+
+}
+@media (max-width: 630px) {
+	#rentals > div{
+		padding: 0 3% 0 3%;
+		width: 94%;
+	}
+	#rentals > h3{
+		font-size: 15px;
+	}
+	#rates h4{
+		font-size: 14px;
+	}
+	#rates tr{
+		font-size: 12px;
+	}
+	#rates td:first-child{
+		width: 150px;
+	}
+	#rates p{
+		font-size: 11px;
+	}
+	#what_to_bring li{
+		font-size: 12px;
+	}
+}
+
+
+
+
+
