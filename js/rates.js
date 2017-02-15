@@ -4,16 +4,6 @@
 /*-----------------------------------------------------------------------------*/
 /* Joseph Code */
 
-//responsive styling of page
-$(".service_examples").each(function () {
-	"use strict";
-	var divWidth = $(this).width();
-	$(this).css("margin", function () {
-		"use strict";
-		return "0 " + ((1200 - divWidth) / 2) + "px";
-	});
-});
-
 
 //functionality of elements on page
 $("select").on("change", function () {
