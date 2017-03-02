@@ -25,14 +25,29 @@
 
     font-family: 'Abel';
     text-transform: uppercase;
+    background-color: #bdc3c7;
+    color: #000;
+}
+
+.faq_question:hover {
+    background-color: #000;
+    color: #F0FF59;
 }
 
 .faq_answer_container {
     height: 0px;
+    max-height: inherit;
     overflow: hidden;
-    padding: 0px;
-    /*background-color: grey;*/
+    padding: 0px 15px 0px 15px;
     text-align: center;
     font-family: 'Abel';
     font-size: 25px;
+}
+
+.faq_answer_container .shortAnswer{
+    text-align: center;
+    font-size: 50px;
+}
+
+.faq_answer_container .longAnswer{
 }
